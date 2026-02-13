@@ -77,20 +77,20 @@ def process_statement(
                     # Map French month names to numbers
                     month_map = {
                         "janvier": 1,
-                        "février": 2,
+                        "fevrier": 2,
                         "mars": 3,
                         "avril": 4,
                         "mai": 5,
                         "juin": 6,
                         "juillet": 7,
-                        "août": 8,
+                        "aout": 8,
                         "septembre": 9,
                         "octobre": 10,
                         "novembre": 11,
-                        "décembre": 12,
+                        "decembre": 12,
                     }
                     due_day = int(match.group(1))
-                    due_month = month_map.get(match.group(2), 0)
+                    due_month = month_map.get(match.group(2))
                     due_year = int(match.group(3))
                     break
 
